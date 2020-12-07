@@ -14,8 +14,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 60%;
     padding: 1em;
+    border: 1px solid black;
 }
 .content-container{
     font-size: 18pt;

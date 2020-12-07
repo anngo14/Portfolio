@@ -1,0 +1,49 @@
+.introduction-container{
+    height: 40em;
+    position: relative;
+    background: rgb(4,6,37);
+    background: linear-gradient(141deg, rgba(4,6,37,1) 0%, rgba(8,10,70,1) 7%, rgba(17,19,83,1) 15%, rgba(38,40,108,1) 24%, rgba(53,55,122,1) 41%, rgba(53,55,122,1) 59%, rgba(38,40,108,1) 76%, rgba(17,19,83,1) 85%, rgba(8,10,70,1) 93%, rgba(4,6,37,1) 100%);
+}
+.name-container{
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translate(35%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.name{
+    font-size: 20pt;
+    cursor: default;
+}
+.name-subheader{
+    font-size: 18pt;
+    cursor: default;
+    margin-bottom: 1em;
+}
+.name-links{
+    display: flex;
+    flex-direction: row;
+    width: 7em;
+    justify-content: space-between;
+}
+.fa{
+    padding: 10px;
+    font-size: 30px;
+    width: 52px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+}
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+}
+.fa-github{
+    background: white;
+    color: black;
+}

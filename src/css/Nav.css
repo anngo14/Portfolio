@@ -1,0 +1,38 @@
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.burger{
+    display: flex;
+    flex-direction: column;
+    width: 2.2em;
+    border: 2px solid white;
+    justify-content: space-between;
+    align-self: center;
+    height: 2em;
+    padding: 5px;
+    margin: 0.5em;
+    margin-left: 1em;
+    align-self: flex-start;
+}
+.line{
+    background-color: white;
+    height: 3px;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    width: 10em;
+    margin: 0.5em;
+}
+.nav-link{
+    font-size: 14pt;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,7 @@
+.timeline-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 20em;
+    margin-top: 2em;
+}

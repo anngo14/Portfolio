@@ -1,0 +1,29 @@
+.about-container{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#header{
+    font-size: 28pt;
+}
+.about-content{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 1em;
+}
+.content-container{
+    font-size: 18pt;
+    width: 20em;
+}
+.img-container{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+}

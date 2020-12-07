@@ -17,11 +17,24 @@
     align-items: center;
 }
 .timeline{
-    background-color: black;
-    width: 80%;
-    height: 1px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
     margin: 0 1em;
 }
-.timeline-end{
+.timeline-dot{
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+    background-color: black;
+}
+.timeline-line{
+    background-color: black;
+    height: 1px;
+    width: 100%;
+}
+.timeline-year{
     font-size: 16pt;
 }

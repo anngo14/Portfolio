@@ -16,7 +16,7 @@
 .shelf-content{
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    padding: 1em;
 }
 .shelf-item{
     display: flex;

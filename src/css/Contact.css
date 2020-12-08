@@ -1,0 +1,33 @@
+.contact-container{
+    padding: 10em;
+}
+#contact-header{
+    margin-bottom: 1em;
+}
+.contact-content{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.contact-subheader{
+    display: flex;
+    flex-direction: row;
+    font-size: 22pt;
+    margin-top: 1em;
+}
+.contact-subtitle{
+    font-weight: 100;
+}
+.contact-subcontent{
+    font-weight: 400;
+    margin-left: 0.5em;
+}
+#social-header{
+    margin-top: 2em;
+    font-size: 24pt;
+}
+.social-row{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+}

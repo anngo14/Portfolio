@@ -1,0 +1,11 @@
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-content{
+    border: 1px solid black;
+    height: 25em;
+    width: 85%;
+}

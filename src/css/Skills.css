@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2em
+    margin-top: 2em;
 }
 .shelf-container{
     border: 1px solid black;
@@ -12,6 +12,7 @@
     flex-direction: column;
     margin-top: 2em;
     padding: 1em;
+    background-color: #FDFEFE;
 }
 .shelf-content{
     display: flex;

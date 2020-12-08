@@ -46,7 +46,7 @@ export default function Skills() {
                 </div>
             </div>
             <div className='shelf-container'>
-                <h2>Databases</h2>
+                <h2>Other</h2>
                 <div className='shelf-content'>
                     <div className='shelf-item'>
                         <div className='shelf-icon'>
@@ -57,11 +57,6 @@ export default function Skills() {
                         <div className='shelf-icon'>
                         </div>
                         <span className='shelf-title'>React</span>
-                    </div>
-                    <div className='shelf-item'>
-                        <div className='shelf-icon'>
-                        </div>
-                        <span className='shelf-title'>MongoDB</span>
                     </div>
                 </div>
             </div>

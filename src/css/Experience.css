@@ -1,22 +1,21 @@
-.timeline-container{
+.experience-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 22em;
     margin-top: 2em;
 }
-.timeline-content{
+.experience-content{
     margin-top: 1em;
     width: 85%;
-    height: 20em;
+    height: 40em;
     border: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.timeline{
+.experience{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -24,17 +23,17 @@
     width: 75%;
     margin: 0 1em;
 }
-.timeline-dot{
+.experience-dot{
     border-radius: 50%;
     height: 7px;
     width: 7px;
     background-color: black;
 }
-.timeline-line{
+.experience-line{
     background-color: black;
     height: 1px;
     width: 100%;
 }
-.timeline-year{
-    font-size: 16pt;
+.experience-year{
+    font-size: 18pt;
 }

@@ -23,6 +23,11 @@ export default function Skills() {
                         </div>
                         <span className='shelf-title'>JS</span>
                     </div>
+                    <div className='shelf-item'>
+                        <div className='shelf-icon'>
+                        </div>
+                        <span className='shelf-title'>TS</span>
+                    </div>
                 </div>
             </div>
             <div className='shelf-container'>

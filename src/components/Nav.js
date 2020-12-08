@@ -1,5 +1,7 @@
 import React from 'react'
 import '../css/Nav.css'
+import resume from './resource/Resume.pdf'
+
 export default function Nav() {
     return (
         <div className='nav-container'>
@@ -15,7 +17,7 @@ export default function Nav() {
             </div>
             <div className='nav-menu'>
                 <a href='#' className='nav-link'>Home</a>
-                <a href='#' className='nav-link'>Resume</a>
+                <a href={resume} target='_blank' className='nav-link'>Resume</a>
                 <a href='#' className='nav-link'>Portfolio</a>
                 <a href='#' className='nav-link'>Contact</a>
             </div>

@@ -8,7 +8,7 @@
 .shelf-container{
     border: 1px solid black;
     display: flex;
-    width: 85%;
+    width: 75%;
     flex-direction: column;
     margin-top: 2em;
     padding: 1em;
@@ -21,16 +21,17 @@
 .shelf-item{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
     padding: 1em;
+    margin-left: 4em;
 }
 .shelf-icon{
     border: 1px solid black;
-    height: 5em;
-    width: 5em;
+    height: 10em;
+    width: 10em;
 }
 .shelf-title{
     margin-top: 1em;
+    font-size: 14pt;
 }

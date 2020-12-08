@@ -14,6 +14,11 @@
     flex-direction: row;
     align-items: center;
     cursor: pointer;
+    background-color: black;
+    width: 10.5em;
+}
+.nav-btn:hover{
+    background-color: #F37171;
 }
 #nav-menu-title{
     font-size: 14pt;
@@ -45,6 +50,9 @@
     background-color: black;
     border-radius: 5px;
     opacity: 0.85;
+}
+.nav-menu:hover{
+    opacity: 1;
 }
 .nav-link{
     font-size: 18pt;

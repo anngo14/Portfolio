@@ -1,7 +1,35 @@
 .skills-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    height: 20em;
+    align-items: center;
     margin-top: 2em
+}
+.shelf-container{
+    border: 1px solid black;
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    margin-top: 2em;
+}
+.shelf-content{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+.shelf-item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.shelf-icon{
+    border: 1px solid black;
+    height: 5em;
+    width: 5em;
+}
+.shelf-title{
+    margin-top: 1em;
 }

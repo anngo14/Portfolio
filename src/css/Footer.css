@@ -1,7 +1,8 @@
 .footer-container{
     margin-top: 10em;
     height: 2em;
-    background-color: #A79F9F;
+    background-color: #120101;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

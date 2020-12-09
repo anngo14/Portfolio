@@ -3,9 +3,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 2em;
 }
 .portfolio-content{
-    border: 1px solid black;
-    height: 25em;
-    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.portfolio-row{
+    display: flex;
+    flex-direction: row;
+    width: 80em;
+    height: 15em;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.portfolio-item{
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+}
+.portfolio-img{
+    border: 1px solid #c7c7c7;
+    width: 100%;
+    height: 100%;
+}
+.item-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-links{
+    width: 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

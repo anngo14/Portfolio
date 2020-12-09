@@ -16,13 +16,16 @@
     align-items: flex-end;
 }
 .name{
-    font-size: 20pt;
     cursor: default;
 }
+.name > h1{
+    font-size: 32pt;
+}
 .name-subheader{
-    font-size: 18pt;
     cursor: default;
-    margin-bottom: 1em;
+}
+.name-subheader > p{
+    font-size: 18pt;
 }
 .name-links{
     display: flex;
@@ -39,11 +42,22 @@
     text-decoration: none;
     background-color: white;
 }
+.fa:hover{
+    text-decoration: none;
+}
 .fa-linkedin{
     background: #007bb5;
     color: white;
 }
+.fa-linkedin:hover{
+    background: #007bb5;
+    color: white;
+}
 .fa-github{
+    background: white;
+    color: black;
+}
+.fa-github:hover{
     background: white;
     color: black;
 }

@@ -14,13 +14,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 60em;
     padding: 1em;
-    border: 1px solid black;
 }
 .content-container{
     font-size: 18pt;
-    width: 20em;
+    width: 22em;
 }
 .img-container{
     border: 1px solid black;

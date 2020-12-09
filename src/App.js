@@ -7,12 +7,13 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App(){
   return(
     <div className="App">
       <Nav />
-      <Introduction name="Andrew Ngo"/>
+      <Introduction header="Andrew Ngo" subheader="Software Engineer" links/>
       <About />
       <Experience />
       <Skills />

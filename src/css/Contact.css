@@ -30,4 +30,6 @@
     margin-top: 2em;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 10em;
 }

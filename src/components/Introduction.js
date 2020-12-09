@@ -5,10 +5,10 @@ function Introduction(props){
         <div className='introduction-container'>
             <div className='name-container'>
                 <div className='name'>
-                    <h1>{props.name}</h1>
+                    <h1>{props.header}</h1>
                 </div>
                 <div className='name-subheader'>
-                    <p>Software Developer</p>
+                    <p>{props.subheader}</p>
                 </div>
                 <div className='name-links'>
                     <a href="https://www.linkedin.com/in/andrew-ngo-ba043716b/" target='_blank' rel="noreferrer" className="fa fa-linkedin"></a>

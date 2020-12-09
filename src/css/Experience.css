@@ -7,7 +7,7 @@
 }
 .experience-content{
     margin-top: 1em;
-    width: 85%;
+    width: 90em;
     height: 40em;
     border: 1px solid black;
     display: flex;
@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 70em;
     margin: 0 1em;
 }
 .experience-dot{

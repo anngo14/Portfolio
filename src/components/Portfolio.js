@@ -1,99 +1,68 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import PortfolioItems from './PortfolioItems'
 import '../css/Portfolio.css'
 
 export default function Portfolio() {
+    let projects = [
+        {
+            title: "Project 1",
+            category: "Category",
+            code: "#",
+            live: "#",
+            info: "#",
+            more: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            tags: ["Primary", "Primary", "Primary"]
+        },
+        {
+            title: "Project 2",
+            category: "Category",
+            code: "#",
+            info: "#",
+            more: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            tags: ["Primary", "Primary", "Primary"]
+        },
+        {
+            title: "Project 3",
+            category: "Category",
+            code: "#",
+            info: "#",
+            more: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            tags: ["Primary", "Primary", "Primary"]
+        },
+        {
+            title: "Project 4",
+            category: "Category",
+            code: "#",
+            live: "#",
+            info: "#",
+            more: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            tags: ["Primary", "Primary", "Primary"]
+        },
+        {
+            title: "Project 5",
+            category: "Category",
+            code: "#",
+            live: "#",
+            info: "#",
+            more: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            tags: ["Primary", "Primary", "Primary"]
+        },
+        {
+            title: "Project 6",
+            category: "Category",
+            code: "#",
+            info: "#",
+            more: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            tags: ["Primary", "Primary", "Primary"]
+        }
+
+    ]
     return (
         <div className='portfolio-container'>
             <h1>Portfolio</h1>
             <div className='portfolio-content'>
-                <div className='portfolio-row'>
-                    <Card className='portfolio-item'>
-                        <div className='portfolio-img'></div>
-                        <Card.Body className='item-header'>
-                            <div className='item-title'>
-                                <Card.Title>Project 1</Card.Title>
-                                <Card.Subtitle>Category</Card.Subtitle>
-                            </div>
-                            <div className='item-links'>
-                                <span>Code</span>
-                                <span>Live</span>
-                                <span>Info</span>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                    <Card className='portfolio-item'>
-                        <div className='portfolio-img'></div>
-                        <Card.Body className='item-header'>
-                            <div className='item-title'>
-                                <Card.Title>Project 2</Card.Title>
-                                <Card.Subtitle>Category</Card.Subtitle>
-                            </div>
-                            <div className='item-links'>
-                                <span>Code</span>
-                                <span>Live</span>
-                                <span>Info</span>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                    <Card className='portfolio-item'>
-                        <div className='portfolio-img'></div>
-                        <Card.Body className='item-header'>
-                            <div className='item-title'>
-                                <Card.Title>Project 3</Card.Title>
-                                <Card.Subtitle>Category</Card.Subtitle>
-                            </div>
-                            <div className='item-links'>
-                                <span>Code</span>
-                                <span>Live</span>
-                                <span>Info</span>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </div>
-                <div className='portfolio-row'>
-                    <Card className='portfolio-item'>
-                        <div className='portfolio-img'></div>
-                        <Card.Body className='item-header'>
-                            <div className='item-title'>
-                                <Card.Title>Project 4</Card.Title>
-                                <Card.Subtitle>Category</Card.Subtitle>
-                            </div>
-                            <div className='item-links'>
-                                <span>Code</span>
-                                <span>Live</span>
-                                <span>Info</span>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                    <Card className='portfolio-item'>
-                        <div className='portfolio-img'></div>
-                        <Card.Body className='item-header'>
-                            <div className='item-title'>
-                                <Card.Title>Project 5</Card.Title>
-                                <Card.Subtitle>Category</Card.Subtitle>
-                            </div>
-                            <div className='item-links'>
-                                <span>Code</span>
-                                <span>Live</span>
-                                <span>Info</span>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                    <Card className='portfolio-item'>
-                        <div className='portfolio-img'></div>
-                        <Card.Body className='item-header'>
-                            <div className='item-title'>
-                                <Card.Title>Project 6</Card.Title>
-                                <Card.Subtitle>Category</Card.Subtitle>
-                            </div>
-                            <div className='item-links'>
-                                <span>Code</span>
-                                <span>Live</span>
-                                <span>Info</span>
-                            </div>
-                        </Card.Body>
-                    </Card>
+                <div className='portfolio-grid'>
+                    <PortfolioItems projects={projects} />
                 </div>
             </div>
         </div>

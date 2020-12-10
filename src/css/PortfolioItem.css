@@ -26,7 +26,6 @@
     cursor: default;
 }
 .item-links{
-    width: 8em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

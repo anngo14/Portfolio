@@ -8,9 +8,9 @@ export default function SkillRow(props) {
             <Card.Body>
                 <h2>{props.row.title}</h2>
                 <div className='shelf-content'>
-                    {props.row.items.map((item) => {
+                    {props.row.items.map((item, i) => {
                         return (
-                            <div className='shelf-item'>
+                            <div className='shelf-item' key={i}>
                                 <div className='shelf-icon'>
                                 </div>
                                 <span className='shelf-title'>{item.title}</span>

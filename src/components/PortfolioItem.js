@@ -20,7 +20,7 @@ export default class PortfolioItem extends Component {
                         <Card.Title>{this.props.project.title}</Card.Title>
                         <Card.Subtitle>{this.props.project.category}</Card.Subtitle>
                     </div>
-                    <div className='item-links'>
+                    <div className='item-links' style={{width: this.props.project.live ? '8em' : '5em'}}>
                         <span className='item-link'>Code</span>
                         {this.props.project.live && <span className='item-link'>Live</span> }
                         <span className='item-link' onClick={this.toggle}>Info</span>
@@ -34,8 +34,8 @@ export default class PortfolioItem extends Component {
                         {this.props.project.more}
                     </div>
                     <div className='information-tags'>
-                        {this.props.project.tags.map((tag) => {
-                            return <Badge variant="dark" className='tag'>{tag}</Badge>
+                        {this.props.project.tags.map((tag, i) => {
+                            return <Badge variant="dark" className='tag' key={i}>{tag}</Badge>
                         })}
                     </div>
                 </div>

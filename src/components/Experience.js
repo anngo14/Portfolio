@@ -10,9 +10,7 @@ export default function Experience() {
             subtitle: "Miamai, FL", 
             description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
             iconcolor: 'rgb(33, 150, 243)',
-            textcolor: '#FDFEFE',
-            bgcolor: 'rgb(33, 150, 243)',
-            arrowRight: '7px solid  rgb(33, 150, 243)'
+            textcolor: 'black',
         },
         {
             date: "2011 - present",
@@ -21,8 +19,16 @@ export default function Experience() {
             description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
             iconcolor: 'rgb(233, 30, 99)',
             textcolor: 'black',
-            bgcolor: 'white',
-        }
+        },
+        {
+            date: "2011 - present",
+            title: "Creative Director",
+            subtitle: "Miamai, FL", 
+            description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            iconcolor: 'rgb(16, 204, 82)',
+            textcolor: 'black',
+        },
+
     ];
     return (
         <div className='experience-container'>
@@ -42,9 +48,6 @@ export default function Experience() {
                         <p>{experience.description}</p>
                     </VerticalTimelineElement>)
                 })}
-                <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                />
             </VerticalTimeline>
         </div>
     )

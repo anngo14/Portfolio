@@ -47,7 +47,7 @@ export default function Portfolio() {
             category: "Web App",
             code: "https://github.com/anngo14/Module2",
             more: "Java application that serves as a DVR managing system. Services are categorized into various packages (Sports, Movies, Kids, etc...) which users have the option to choose/remove individual programs from.",
-            tags: ["Java", "HTML5", "CSS3", "MySQL"]
+            tags: ["Java", "HTML5", "CSS3", "JDBC", "MySQL"]
         }
     ]
     return (

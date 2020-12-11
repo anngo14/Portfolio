@@ -28,7 +28,7 @@ export default class PortfolioItem extends Component {
                 </div>
                 <div className='item-information' slide={this.state.slide ? 1 : 0}>
                     <div className='information-header'>
-                        <div className='information-close' onClick={this.toggle}>x</div>
+                        <div className='information-close' onClick={this.toggle}>X</div>
                     </div>
                     <div className='information-content'>
                         {this.props.project.more}

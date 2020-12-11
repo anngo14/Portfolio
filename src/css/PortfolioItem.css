@@ -1,12 +1,15 @@
 .portfolio-item{
     flex: 0 0 32%;
-    height: 20em;
     max-width: 22em;
+    height: 20em;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
     overflow: hidden;
     color: black;
+}
+.portfolio-item:hover{
+    animation: bounce 0.35s ease-in-out 1 forwards;
 }
 .portfolio-img{
     width: 100%;
@@ -40,7 +43,8 @@
 .item-information{
     width: 22em;
     min-height: 20em;
-    padding: 0 0.5em;
+    padding: 0 1em;
+    padding-top: 0.5em;
     background-color: white;
 }
 .item-information[slide='1']{
@@ -62,7 +66,8 @@
 }
 .information-content{
     height: 15em;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .information-tags{
     margin-top: 0.5em;
@@ -78,4 +83,41 @@
 @keyframes slideDown{
     0%{ transform: translateY(-100%); }
     100%{ transform: translateY(0%); }
+}
+@keyframes bounce{
+    0%{ transform: translateY(0%); }
+    33%{ transform: translateY(-5%); }
+    66%{ transform: translateY(5%); }
+    100%{ transform: translateY(0%); }
+}
+
+@media(max-width: 1291px){
+    .portfolio-item{
+        flex: 0 0 50%; 
+        margin-bottom: 2em;       
+    }
+}
+@media(max-width: 870px){
+    .portfolio-item{
+        flex: unset;
+        align-self: center;
+    }
+}
+@media(max-width: 404px){
+    .portfolio-item{
+        width: 90%;
+        max-width: unset;
+    }
+    .item-information{
+        width: 100%;
+    }
+    .item-header{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .item-title{
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
 }

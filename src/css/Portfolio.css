@@ -8,18 +8,31 @@
     padding-top: 2em;
     padding-bottom: 10em;
 }
-.portfolio-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
 .portfolio-grid{
-    display: flex;
     width: 75em;
     height: 42em;
     justify-content: space-between;
     align-content: space-between;
     margin-top: 2em;
+    display: flex;
     flex-wrap: wrap;
+}
+@media(max-width: 1291px){
+    .portfolio-grid{
+        width: 85%;
+        height: initial;
+    }
+}
+@media(max-width: 870px){
+    .portfolio-grid{
+        flex-wrap: unset;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media(max-width: 488px){
+    .portfolio-grid{
+        width: 100%;
+    }
 }

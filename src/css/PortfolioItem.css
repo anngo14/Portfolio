@@ -35,9 +35,12 @@
     justify-content: space-between;
 }
 .item-link{
+    color: black;
     cursor: pointer;
 }
 .item-link:hover{
+    color: black;
+    text-decoration: none;
     opacity: 0.5;
 }
 .item-information{
@@ -65,12 +68,12 @@
     opacity: 0.5;
 }
 .information-content{
-    height: 15em;
+    height: 14em;
     overflow-y: auto;
     overflow-x: hidden;
 }
 .information-tags{
-    margin-top: 0.5em;
+    padding-top: 0.5em;
     width: 100%;
 }
 .tag{

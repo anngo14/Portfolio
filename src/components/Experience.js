@@ -5,29 +5,40 @@ import '../css/Experience.css'
 export default function Experience() {
     let experiences = [
         {
-            date: "2011 - present",
-            title: "Creative Director",
-            subtitle: "Miamai, FL", 
-            description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            date: "2019 - present",
+            title: "Video Operations Analyst",
+            company: "YouTube TV",
+            subtitle: "Austin, TX", 
+            iconcolor: 'rgb(33, 150, 243)',
+            bgcolor: 'rgb(33, 150, 243)',
+            arrowRight: '7px solid  rgb(33, 150, 243)',
+            textcolor: 'white',
+        },
+        {
+            date: "2019 - present",
+            title: "Software Engineer",
+            company: "Tata Consultancy Services",
+            subtitle: "Austin, TX", 
             iconcolor: 'rgb(33, 150, 243)',
             textcolor: 'black',
         },
         {
-            date: "2011 - present",
-            title: "Creative Director",
-            subtitle: "Miamai, FL", 
-            description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-            iconcolor: 'rgb(233, 30, 99)',
-            textcolor: 'black',
-        },
-        {
-            date: "2011 - present",
-            title: "Creative Director",
-            subtitle: "Miamai, FL", 
-            description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            date: "June 2018 - September 2018",
+            title: "Web Designer",
+            company: "Yarcort",
+            subtitle: "Kingsley, PA", 
             iconcolor: 'rgb(16, 204, 82)',
             textcolor: 'black',
         },
+        {
+            date: "2014 - 2019",
+            title: "Student",
+            company: "The University of Texas at San Antonio",
+            subtitle: "San Antonio, TX", 
+            iconcolor: 'rgb(233, 30, 99)',
+            textcolor: 'black',
+        },
+        
 
     ];
     return (
@@ -44,7 +55,8 @@ export default function Experience() {
                         contentArrowStyle={{borderRight: experience.arrowRight}}
                     >
                         <h3>{experience.title}</h3>
-                        <h4>{experience.subtitle}</h4>
+                        <h4>{experience.company}</h4>
+                        <h5>{experience.subtitle}</h5>
                         <p>{experience.description}</p>
                     </VerticalTimelineElement>)
                 })}

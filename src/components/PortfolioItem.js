@@ -21,8 +21,8 @@ export default class PortfolioItem extends Component {
                         <Card.Subtitle>{this.props.project.category}</Card.Subtitle>
                     </div>
                     <div className='item-links' style={{width: this.props.project.live ? '8em' : '5em'}}>
-                        <span className='item-link'>Code</span>
-                        {this.props.project.live && <span className='item-link'>Live</span> }
+                        <a className='item-link' href={this.props.project.code} target='_blank'>Code</a>
+                        {this.props.project.live && <a className='item-link' href={this.props.project.live} target='_blank'>Live</a> }
                         <span className='item-link' onClick={this.toggle}>Info</span>
                     </div>
                 </div>

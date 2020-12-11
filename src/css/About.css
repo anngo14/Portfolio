@@ -6,9 +6,6 @@
     background-color: #F2F3F4;
     padding: 2em 0;
 }
-#header{
-    font-size: 28pt;
-}
 .about-content{
     margin-top: 1em;
     display: flex;
@@ -27,4 +24,34 @@
     border-radius: 50%;
     width: 20em;
     height: 20em;
+}
+@media(max-width: 1000px){
+    .about-content{
+        width: 100%;
+    }
+}
+@media(max-width: 920px){
+    .about-content{
+        flex-direction: column;
+    }
+    .content-container{
+        margin-bottom: 1em;
+        width: 80%;
+    }
+}
+@media(max-width: 399px){
+    .content-container{
+        width: 90%;
+        font-size: 16pt;
+    }
+    .img-container{
+        width: 15em;
+        height: 15em;
+    }
+}
+@media(max-width: 280px){
+    .img-container{
+        width: 12em;
+        height: 12em;
+    }
 }

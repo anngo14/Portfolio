@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-vertical-timeline-component/style.min.css';
 
 function App(){
   return(

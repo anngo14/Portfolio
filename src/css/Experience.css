@@ -4,16 +4,13 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 2em;
+    background-color: #040625;
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 0;
 }
 .experience-content{
-    margin-top: 1em;
-    width: 100em;
-    height: 40em;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    color: black;
 }
 .experience{
     display:flex;
@@ -36,4 +33,7 @@
 }
 .experience-year{
     font-size: 18pt;
+}
+.vertical-timeline-element-date{
+    color: white;
 }

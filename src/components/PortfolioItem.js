@@ -10,10 +10,11 @@ export default class PortfolioItem extends Component {
         this.setState({
             slide: !this.state.slide
         });
+        console.log(this.state.slide);
     }
     render() {
         return (
-            <Card className='portfolio-item'>
+            <Card className='portfolio-item' slide={this.state.slide ? 1 : 0}>
                 <div className='portfolio-img' onClick={this.toggle}></div>
                 <div className='item-header'>
                     <div className='item-title'>
@@ -28,7 +29,7 @@ export default class PortfolioItem extends Component {
                 </div>
                 <div className='item-information' slide={this.state.slide ? 1 : 0}>
                     <div className='information-header'>
-                        <div className='information-close' onClick={this.toggle}>X</div>
+                        <div className='information-close' onClick={this.toggle}>✕</div>
                     </div>
                     <div className='information-content'>
                         {this.props.project.more}

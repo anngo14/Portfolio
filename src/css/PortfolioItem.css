@@ -8,7 +8,7 @@
     overflow: hidden;
     color: black;
 }
-.portfolio-item:hover{
+.portfolio-item:hover[slide='0']{
     animation: bounce 0.35s ease-in-out 1 forwards;
 }
 .portfolio-img{
@@ -63,9 +63,7 @@
 }
 .information-close{
     cursor: pointer;
-}
-.infomration-close:hover{
-    opacity: 0.5;
+    color: #EC7063;
 }
 .information-content{
     height: 14em;

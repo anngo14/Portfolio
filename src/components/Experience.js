@@ -45,9 +45,10 @@ export default function Experience() {
         <div className='experience-container'>
             <h1>Experience</h1>
             <VerticalTimeline className='experience-content'>
-                {experiences.map((experience) => {
+                {experiences.map((experience, i) => {
                     return (
                     <VerticalTimelineElement
+                        key={i}
                         date={experience.date}
                         dateClassName='vertical-timeline-element-date'
                         iconStyle={{background: experience.iconcolor}}

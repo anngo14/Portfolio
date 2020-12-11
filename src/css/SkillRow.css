@@ -31,3 +31,43 @@
     margin-top: 1em;
     font-size: 14pt;
 }
+@media(max-width: 1554px){
+    .shelf-container{
+        width: 85%;
+    }
+    .shelf-content{
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: unset;
+    }
+    .shelf-item{
+        margin-left: 0;
+        flex: 0 0 25%;
+    }
+}
+@media(max-width: 540px){
+    .shelf-content{
+        flex-wrap: unset;
+        flex-direction: column;
+    }
+    .shelf-item{
+        flex: unset;
+    }
+    #shelf-header{
+        font-size: 22pt;
+        text-align: center;
+    }
+    .shelf-title{
+        text-align: center;
+    }
+}
+@media(max-width: 266px){
+    .shelf-icon{
+        height: 8em;
+        width: 8em;
+    }
+    #shelf-header{
+        font-size: 20pt;
+    }
+}

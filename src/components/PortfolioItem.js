@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Badge, Card } from 'react-bootstrap'
 import '../css/PortfolioItem.css'
-
 export default class PortfolioItem extends Component {
     state = {
         slide: false
@@ -14,7 +13,9 @@ export default class PortfolioItem extends Component {
     render() {
         return (
             <Card className='portfolio-item' slide={this.state.slide ? 1 : 0}>
-                <div className='portfolio-img' onClick={this.toggle}></div>
+                <div className='portfolio-img' onClick={this.toggle}>
+                    <img src={process.env.PUBLIC_URL + '/resource/portfolio/' + this.props.project.image} alt={this.props.project.title} className='item-img'></img>
+                </div>
                 <div className='item-header'>
                     <div className='item-title'>
                         <Card.Title>{this.props.project.title}</Card.Title>

@@ -16,9 +16,9 @@ export default function Contact() {
                 </div>
                 <span id='social-header'>Social Links</span>
                 <div className='social-row'>
-                    <span>ig</span>
-                    <span>linked_in</span>
-                    <span>github</span>
+                    <a href="https://www.instagram.com/aandrewnngo/" target='_blank' rel="noreferrer" className='fa sq fa-instagram'></a>
+                    <a href="https://www.linkedin.com/in/andrew-ngo-ba043716b/" target='_blank' rel="noreferrer" className='fa sq fa-linkedin'></a>
+                    <a href="https://github.com/anngo14" target='_blank' rel="noreferrer" className='fa sq fa-github'></a>
                 </div>
             </div>
         </div>

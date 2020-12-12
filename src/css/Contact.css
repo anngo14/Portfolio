@@ -35,6 +35,15 @@
     justify-content: space-between;
     width: 10em;
 }
+.sq{
+    border-radius: 0;
+    background-color: #F2F3F4;
+    color: black;
+}
+.sq:hover{
+    background-color: #F2F3F4;
+    color: black;
+}
 @media(max-width: 874px){
     .contact-container{
         padding: 8em;

@@ -10,7 +10,6 @@ export default class PortfolioItem extends Component {
         this.setState({
             slide: !this.state.slide
         });
-        console.log(this.state.slide);
     }
     render() {
         return (

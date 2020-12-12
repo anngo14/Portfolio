@@ -1,16 +1,13 @@
 import '../css/Introduction.css';
 
 function Introduction(props){
-    const bgDiv = [];
-    for(let i = 0; i < 8; i++){
-        bgDiv.push(
-        <div key={i} className='bg-div'>
-            <div className='bg-star'></div>
-        </div>)
-    }
     return (
         <div className='introduction-container'>
-            {bgDiv}
+            <div className='left-bg'></div>
+            <div className='top-bg'></div>
+            <div className='right-bg'></div>
+            <div className='left-bg-circle'></div>
+            <div className='right-bg-circle'></div>
             <div className='name-container'>
                 <div className='name'>
                     <h1>{props.header}</h1>

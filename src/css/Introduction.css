@@ -1,26 +1,67 @@
 .introduction-container{
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 3em;
     height: 40em;
     width: 100%;
     background: rgb(4,6,37);
     background: linear-gradient(141deg, rgba(4,6,37,1) 0%, rgba(8,10,70,1) 7%, rgba(17,19,83,1) 15%, rgba(38,40,108,1) 24%, rgba(53,55,122,1) 41%, rgba(53,55,122,1) 59%, rgba(38,40,108,1) 76%, rgba(17,19,83,1) 85%, rgba(8,10,70,1) 93%, rgba(4,6,37,1) 100%);
 }
-.bg-div{
-    flex: 0 0 25%;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-end;
+.left-bg{
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    height: 20em;
+    margin-left: 2em;
+    margin-bottom: 3em;
+    border-radius: 15px;
 }
-.bg-star{
-    background-color: #FEF9E7;
-    height: 5px;
+.top-bg{
+    background-color: white;
+    height: 4px;
+    width: 12em;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2em;
+    margin-top: 1em;
+}
+.right-bg{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 5px;
-    border-radius: 50%;
-    align-self: center;
+    height: 12em;
+    margin-right: 2em;
+    margin-top: 1em;
+    border-radius: 15px;
+}
+.left-bg-circle{
+    background-color: white;
+    width: 2px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 4em;
+    margin-bottom: 11em;
+    border-radius: 15px;
+    animation: slide 2s linear infinite 0.5s alternate-reverse backwards;
+}
+.right-bg-circle{
+    background-color: white;
+    border-radius: 15px;
+    width: 3px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 4em;
+    margin-top: 12em;
+    animation: slide2 4s linear infinite alternate-reverse backwards;
 }
 .name-container{
     color: white;
@@ -78,7 +119,12 @@
     background: white;
     color: black;
 }
-
+@keyframes slide{
+    100%{ transform: scaleY(200); }
+}
+@keyframes slide2{
+    100%{ transform: scaleY(300); }
+}
 @media(max-width: 900px){
     .name-container{
         left: 50%;
@@ -99,11 +145,45 @@
         width: 100%;
     }
 }
+@media(max-width: 360px){
+    .left-bg{
+        margin-left: 1em;
+    }
+    .left-bg-circle{
+        margin-left: 2.5em;
+    }
+    .right-bg{
+        margin-right: 1em;
+    }
+    .right-bg-circle{
+        margin-right: 2.5em;
+    }
+    .top-bg{
+        margin-right: 1em;
+    }
+}
+@media(max-width: 306px){
+    .left-bg-circle{
+        display: none;
+    }
+    .right-bg-circle{
+        display: none;
+    }
+}
 @media(max-width: 256px){
     .name > h1{
         font-size: 24pt;
     }
     .name-subheader > p{
         font-size: 10pt;
+    }
+    .left-bg{
+        display: none;
+    }
+    .right-bg{
+        display: none;
+    }
+    .top-bg{
+        display: none;
     }
 }

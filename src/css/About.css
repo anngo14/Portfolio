@@ -20,10 +20,19 @@
     width: 22em;
 }
 .img-container{
-    border: 1px solid black;
     border-radius: 50%;
     width: 20em;
     height: 20em;
+    position: relative;
+    overflow: hidden;
+}
+.img-container > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 3em;
+    width: 100%;
 }
 @media(max-width: 1000px){
     .about-content{

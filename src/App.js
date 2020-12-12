@@ -1,26 +1,23 @@
 import './App.css';
-import Introduction from './components/Introduction';
 import Nav from './components/Nav'
-import About from './components/About'
 import Footer from './components/Footer';
-import Experience from './components/Experience';
-import Skills from './components/Skills';
-import Contact from './components/Contact'
-import Portfolio from './components/Portfolio';
+import Home from './components/Home';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Error from './components/Error';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-vertical-timeline-component/style.min.css';
 
 function App(){
   return(
     <div className="App">
-      <Nav />
-      <Introduction header="Andrew Ngo" subheader="Software Engineer" links/>
-      <About />
-      <Experience />
-      <Skills />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path='/' exact component={Home}/>
+          <Route path='*'component={Error}/>
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   )
 }

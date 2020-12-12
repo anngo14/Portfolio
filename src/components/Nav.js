@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/Nav.css'
 import resume from './resource/Resume.pdf'
+import { Link } from 'react-router-dom'
 
 class Nav extends React.Component {
     state = {
@@ -45,10 +46,10 @@ class Nav extends React.Component {
                     </div>
                 </div>
                 <div className='nav-menu' slide={this.state.menuToggle ? 1 : 0} onMouseLeave={this.handleMouseLeave} onMouseEnter={this.handleMouseEnter}>
-                    <a href='#' className='nav-link'>Home</a>
+                    <Link to='/' className='nav-link'>Home</Link>
                     <a href={resume} target='_blank' className='nav-link'>Resume</a>
-                    <a href='#' className='nav-link'>Portfolio</a>
-                    <a href='#' className='nav-link'>Contact</a>
+                    <Link className='nav-link'>Portfolio</Link>
+                    <Link className='nav-link'>Contact</Link>
                 </div>
             </div>
         )

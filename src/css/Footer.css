@@ -6,6 +6,8 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
+    bottom: 0;
 }
 .footer-content{
     margin-right: 2em;

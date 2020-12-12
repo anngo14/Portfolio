@@ -12,6 +12,7 @@ export default function SkillRow(props) {
                         return (
                             <div className='shelf-item' key={i}>
                                 <div className='shelf-icon'>
+                                    <img src={process.env.PUBLIC_URL + "/resource/skills/" + item.image} alt={item.title} className='icon-img'></img>
                                 </div>
                                 <span className='shelf-title'>{item.title}</span>
                             </div>

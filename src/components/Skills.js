@@ -7,16 +7,20 @@ export default function Skills() {
         title: "Programming Languages",
         items: [
             {
-                title: "Java"
+                title: "Java",
+                image: "java.png"
             },
             {
-                title: "C"
+                title: "C",
+                image: "c.png"
             }, 
             {
-                title: "JS"
+                title: "Javascript",
+                image: "js.png"
             },
             {
-                title: "TS"
+                title: "Typescript",
+                image: "ts.png"
             }
         ]
     };
@@ -24,13 +28,16 @@ export default function Skills() {
         title: "Databases",
         items: [
             {
-                title: "MySQL"
+                title: "MySQL",
+                image: "MySQL.png"
             },
             {
-                title: "PostgreSQL"
+                title: "PostgreSQL",
+                image: "postgresql.png"
             },
             {
-                title: "MongoDB"
+                title: "MongoDB",
+                image: "mongodb.png"
             }
         ]
     };
@@ -38,16 +45,20 @@ export default function Skills() {
         title: "Other",
         items: [
             {
-                title: "Angular"
+                title: "Angular",
+                image: "angular.png"
             },
             {
-                title: "React"
+                title: "React",
+                image: "react.png"
             },
             {
-                title: "Angular Material"
+                title: "Angular Material",
+                image: "material.png"
             },
             {
-                title: "Bootstrap"
+                title: "Bootstrap",
+                image: "bootstrap.png"
             }
         ]
     };

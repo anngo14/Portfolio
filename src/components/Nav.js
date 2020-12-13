@@ -51,7 +51,7 @@ class Nav extends React.Component {
     }
     render(){
         return (
-            <div className='nav-container'>
+            <div className='nav-container' slide={this.getAnimationState()}>
                 <div className='nav-toolbar'>
                     <div className='nav-btn' onClick={this.toggle}>
                         <div className='burger'>

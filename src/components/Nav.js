@@ -35,7 +35,7 @@ class Nav extends React.Component {
             this.setState({
                 menuToggle: false
             })
-        }, 1500);
+        }, 500);
         this.setState(
             {
                 menuTimeout: timeout

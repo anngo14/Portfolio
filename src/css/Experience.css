@@ -9,6 +9,9 @@
     padding-bottom: 0;
     overflow: hidden;
 }
+.experience-container > h1{
+    text-align: center;
+}
 .experience-content{
     color: black;
 }

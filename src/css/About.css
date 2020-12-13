@@ -7,6 +7,9 @@
     padding: 2em 0;
     padding-top: 3em;
 }
+.about-container > h1{
+    text-align: center;
+}
 .about-content{
     margin-top: 1em;
     display: flex;

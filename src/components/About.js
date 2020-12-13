@@ -4,7 +4,7 @@ import image from './resource/selfie.jpg'
 
 export default function About() {
     return (
-        <div className='about-container' id='about'>
+        <div className='about-container'>
             <h1>About Me</h1>
             <div className='about-content'>
                 <div className='content-container'>

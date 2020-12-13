@@ -62,7 +62,7 @@ class Nav extends React.Component {
                         <span id='nav-menu-title'>MENU</span>
                     </div>
                 </div>
-                <div className='nav-menu' slide={this.getAnimationState()} onMouseLeave={this.handleMouseLeave} onMouseEnter={this.handleMouseEnter}>
+                <div className='nav-menu' slide={this.getAnimationState} onMouseLeave={this.handleMouseLeave} onMouseEnter={this.handleMouseEnter}>
                     <Link to='/home' className='nav-link'>Home</Link>
                     <a href={resume} target='_blank' rel="noreferrer" className='nav-link'>Resume</a>
                     <Link to='/portfolio' className='nav-link'>Portfolio</Link>

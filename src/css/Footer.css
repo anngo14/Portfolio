@@ -10,6 +10,7 @@
     bottom: 0;
 }
 .footer-content{
+    text-align: right;
     margin-right: 2em;
     display: flex;
     flex-direction: row;

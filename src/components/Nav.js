@@ -5,13 +5,30 @@ import { Link } from 'react-router-dom'
 
 class Nav extends React.Component {
     state = {
-        menuToggle: false,
+        menuToggle: null,
         menuTimeout: null
     }
     toggle = () => {
-        this.setState({
-            menuToggle: !this.state.menuToggle
-        });
+        let menuState = this.getAnimationState();
+        if(menuState === 0 || menuState === 2){
+            this.setState({
+                menuToggle: true
+            });
+        } else{
+            this.setState({
+                menuToggle: false
+            })
+        }
+    }
+    getAnimationState = () => {
+        const menuState = this.state.menuToggle;
+        if(menuState === true){
+            return 1;
+        } else if(menuState === false){
+            return 0;
+        } else{
+            return 2;
+        }
     }
     handleMouseLeave = () => {
         let timeout = setTimeout(() => {
@@ -45,7 +62,7 @@ class Nav extends React.Component {
                         <span id='nav-menu-title'>MENU</span>
                     </div>
                 </div>
-                <div className='nav-menu' slide={this.state.menuToggle ? 1 : 0} onMouseLeave={this.handleMouseLeave} onMouseEnter={this.handleMouseEnter}>
+                <div className='nav-menu' slide={this.getAnimationState()} onMouseLeave={this.handleMouseLeave} onMouseEnter={this.handleMouseEnter}>
                     <Link to='/home' className='nav-link'>Home</Link>
                     <a href={resume} target='_blank' rel="noreferrer" className='nav-link'>Resume</a>
                     <Link to='/portfolio' className='nav-link'>Portfolio</Link>

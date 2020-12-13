@@ -11,6 +11,9 @@
 .portfolio-item:hover[slide='0']{
     animation: bounce 0.35s ease-in-out 1 forwards;
 }
+.portfolio-item:hover[slide='2']{
+    animation: bounce 0.35s ease-in-out 1 forwards;
+}
 .portfolio-img{
     width: 100%;
     min-height: 14em;

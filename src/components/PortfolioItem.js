@@ -5,17 +5,34 @@ export default class PortfolioItem extends Component {
     constructor(props){
         super(props);
         this.state = {
-            slide: false
+            slide: null
         }
     }
     toggle = () => {
-        this.setState({
-            slide: !this.state.slide
-        });
+        let toggleState = this.getAnimationState();
+        if(toggleState === 0 || toggleState === 2){
+            this.setState({
+                slide: true
+            });
+        } else{
+            this.setState({
+                slide: false
+            });
+        }
+    }
+    getAnimationState = () => {
+        const toggleState = this.state.slide;
+        if(toggleState === true){
+            return 1;
+        } else if(toggleState === false){
+            return 0;
+        } else{
+            return 2;
+        }
     }
     render() {
         return (
-            <Card className='portfolio-item' slide={this.state.slide ? 1 : 0}>
+            <Card className='portfolio-item' slide={this.getAnimationState()}>
                 <div className='portfolio-img' onClick={this.toggle}>
                     <img src={process.env.PUBLIC_URL + '/resource/portfolio/' + this.props.project.image} alt={this.props.project.title} className='item-img'></img>
                 </div>
@@ -30,7 +47,7 @@ export default class PortfolioItem extends Component {
                         <span className='item-link' onClick={this.toggle}>Info</span>
                     </div>
                 </div>
-                <div className='item-information' slide={this.state.slide ? 1 : 0}>
+                <div className='item-information' slide={this.getAnimationState()}>
                     <div className='information-header'>
                         <div className='information-close' onClick={this.toggle}>✕</div>
                     </div>

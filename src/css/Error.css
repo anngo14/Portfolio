@@ -2,5 +2,29 @@
     margin-top: 3em;
     width: 100%;
     height: 91.5vh;
-    border: 1px solid red;
+    background-color: #F2F3F4;
+    position: relative;
+}
+.warning-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 20em;
+    margin-bottom: 2em;
+}
+.warning-container > img{
+    width: 100%;
+}
+.link{
+    font-size: 14pt;
+}
+@media(max-width: 312px){
+    .warning-container{
+        width: 85%;
+    }
+    .warning-container > h1{
+        font-size: 14pt;
+    }
 }

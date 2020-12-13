@@ -16,8 +16,8 @@ function Introduction(props){
                     <p>{props.subheader}</p>
                 </div>
                 <div className='name-links'>
-                    <a href="https://www.linkedin.com/in/andrew-ngo-ba043716b/" target='_blank' rel="noreferrer" className="fa fa-linkedin"></a>
-                    <a href="https://github.com/anngo14" target='_blank' rel="noreferrer" className="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/andrew-ngo-ba043716b/" target='_blank' rel="noreferrer" className="fa fa-linkedin">{null}</a>
+                    <a href="https://github.com/anngo14" target='_blank' rel="noreferrer" className="fa fa-github">{null}</a>
                 </div>
             </div>
         </div>

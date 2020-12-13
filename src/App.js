@@ -12,10 +12,10 @@ function App(){
     <div className="App">
       <Router>
         <Nav />
-        <Switch>
-          <Route path='/' exact component={Home}/>
-          <Route path='*'component={Error}/>
-        </Switch>
+          <Switch>
+            <Route path='/' exact component={Home}/>
+            <Route path='*'component={Error}/>
+          </Switch>
         <Footer />
       </Router>
     </div>

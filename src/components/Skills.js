@@ -64,7 +64,7 @@ export default function Skills() {
     };
 
     return (
-        <div className='skills-container'>
+        <div className='skills-container' id='skills'>
             <h1>Skills</h1>
             <SkillRow row={programmingRow}/> 
             <SkillRow row={dbRow}/>

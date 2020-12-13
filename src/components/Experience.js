@@ -42,7 +42,7 @@ export default function Experience() {
 
     ];
     return (
-        <div className='experience-container'>
+        <div className='experience-container' id='experience'>
             <h1>Experience</h1>
             <VerticalTimeline className='experience-content'>
                 {experiences.map((experience, i) => {

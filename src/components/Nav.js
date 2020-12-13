@@ -52,17 +52,19 @@ class Nav extends React.Component {
     render(){
         return (
             <div className='nav-container'>
-                <div className='nav-btn' onClick={this.toggle}>
-                    <div className='burger'>
-                        <div className='line'></div>
-                        <div className='line'></div>
-                        <div className='line'></div>
-                    </div>
-                    <div>
-                        <span id='nav-menu-title'>MENU</span>
+                <div className='nav-toolbar'>
+                    <div className='nav-btn' onClick={this.toggle}>
+                        <div className='burger'>
+                            <div className='line'></div>
+                            <div className='line'></div>
+                            <div className='line'></div>
+                        </div>
+                        <div>
+                            <span id='nav-menu-title'>MENU</span>
+                        </div>
                     </div>
                 </div>
-                <div className='nav-menu' slide={this.getAnimationState} onMouseLeave={this.handleMouseLeave} onMouseEnter={this.handleMouseEnter}>
+                <div className='nav-menu' slide={this.getAnimationState()} onMouseLeave={this.handleMouseLeave} onMouseEnter={this.handleMouseEnter}>
                     <Link to='/home' className='nav-link'>Home</Link>
                     <a href={resume} target='_blank' rel="noreferrer" className='nav-link'>Resume</a>
                     <Link to='/portfolio' className='nav-link'>Portfolio</Link>

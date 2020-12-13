@@ -2,8 +2,11 @@ import React, { Component } from 'react'
 import { Badge, Card } from 'react-bootstrap'
 import '../css/PortfolioItem.css'
 export default class PortfolioItem extends Component {
-    state = {
-        slide: false
+    constructor(props){
+        super(props);
+        this.state = {
+            slide: false
+        }
     }
     toggle = () => {
         this.setState({

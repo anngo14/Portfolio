@@ -49,11 +49,8 @@
     padding: 1em;
     background-color: black;
     border-radius: 5px;
-    opacity: 0.75;
-    transform: translateX(-105%);
-}
-.nav-menu:hover{
     opacity: 1;
+    transform: translateX(-105%);
 }
 .nav-menu[slide='1']{
     animation: slideIn 0.1s linear 1 forwards;

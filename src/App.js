@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Error from './components/Error';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-vertical-timeline-component/style.min.css';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
 
 function App(){
   return(
@@ -13,8 +15,10 @@ function App(){
       <Router>
         <Nav />
           <Switch>
-            <Route path='/' exact component={Home}/>
-            <Route path='*'component={Error}/>
+            <Route path='/' exact component={Home} />
+            <Route path='/portfolio' component={Portfolio} />
+            <Route path='/contact' component={Contact} />
+            <Route path='*'component={Error} />
           </Switch>
         <Footer />
       </Router>

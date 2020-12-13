@@ -46,7 +46,7 @@ class Nav extends React.Component {
                     </div>
                 </div>
                 <div className='nav-menu' slide={this.state.menuToggle ? 1 : 0} onMouseLeave={this.handleMouseLeave} onMouseEnter={this.handleMouseEnter}>
-                    <Link to='/' className='nav-link'>Home</Link>
+                    <Link to='/home' className='nav-link'>Home</Link>
                     <a href={resume} target='_blank' rel="noreferrer" className='nav-link'>Resume</a>
                     <Link to='/portfolio' className='nav-link'>Portfolio</Link>
                     <Link to='/contact' className='nav-link'>Contact</Link>

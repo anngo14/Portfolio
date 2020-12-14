@@ -7,15 +7,6 @@
     color: white;
     z-index: 1;
 }
-.nav-container[slide='1']{
-    height: unset;
-}
-.nav-container[slide='0']{
-    height: 3em;
-}
-.nav-container[slide='2']{
-    height: 3em;
-}
 .nav-toolbar{
     background-color: #120101;
 }
@@ -49,39 +40,4 @@
 .line{
     background-color: white;
     height: 3px;
-}
-.nav-menu{
-    display: flex;
-    flex-direction: column;
-    line-height: 2.5em;
-    width: 10em;
-    margin: 0.5em;
-    padding: 1em;
-    background-color: black;
-    border-radius: 5px;
-    transform: translateX(-200%);
-}
-.nav-menu[slide='1']{
-    animation: slideIn 0.1s linear 1 forwards;
-}
-.nav-menu[slide='0']{
-    animation: slideOut 0.1s linear 1;
-}
-.nav-link{
-    font-size: 14pt;
-    text-decoration: none;
-    color: white;
-    opacity: 0.5;
-}
-.nav-link:hover{
-    opacity: 1;
-    color: white;
-}
-@keyframes slideIn{
-    0%{ display: unset }
-    100%{transform: translateX(0%);}
-}
-@keyframes slideOut{
-    0% { transform: translateX(0%);}
-    100%{ transform: translateX(-200%); }
 }

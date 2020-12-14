@@ -18,7 +18,6 @@ export default class App extends Component{
   };
 
   dataNav = (data) => {
-    console.log("in App = " + data);
     this.setState({
       menuToggle: data
     });
@@ -26,13 +25,31 @@ export default class App extends Component{
   getMenuToggle = () => {
     return this.state.menuToggle;
   }
+  dataNavMenu = (data) => {
+    if(data){
+      clearTimeout(this.state.menuTimeout);
+      this.setState({
+        menuToggle: true,
+        menuTimeout: null
+      });
+    } else{
+      const timeout = setTimeout(() => {
+        this.setState({
+          menuToggle: false
+        });
+      }, 1000);
+      this.setState({
+        menuTimeout: timeout
+      });
+    }
+  }
 
   render(){
     return(
       <div className="App">
         <Router>
           <Nav data={this.dataNav} menuState={this.getMenuToggle} />
-          <NavMenu menuState={this.getMenuToggle} />
+          <NavMenu data={this.dataNavMenu} menuState={this.getMenuToggle} />
             <Switch>
               <Route path='/' exact><Redirect to='/home' /></Route>
               <Route path='/home' exact component={Home} />

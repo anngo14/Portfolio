@@ -22,7 +22,6 @@ export default class PortfolioItem extends Component {
     }
     getAnimationState = () => {
         const toggleState = this.state.slide;
-        console.log(toggleState);
         if(toggleState === true){
             return 1;
         } else if(toggleState === false){

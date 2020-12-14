@@ -6,7 +6,6 @@ import resume from './resource/Resume.pdf'
 export default function NavMenu(props) {
     let getMenuState = () => {
         let menuState = props.menuState();
-        console.log("in navBar = " + menuState);
         if(menuState === true){ 
             return 1;
         } else if(menuState === false){
@@ -16,26 +15,13 @@ export default function NavMenu(props) {
         }
     }
     let handleMouseLeave = () => {
-        let timeout = setTimeout(() => {
-            this.setState({
-                menuToggle: false
-            })
-        }, 500);
-        this.setState(
-            {
-                menuTimeout: timeout
-            }
-        );
+        props.data(false);
     }
     let handleMouseEnter = () => {
-        clearTimeout(this.state.menuTimeout);
-        this.setState({
-            menuToggle: true,
-            menuTimeout: null
-        });
+        props.data(true);
     }
     return (
-        <div className='nav-menu' slide={getMenuState()} onMouseLeave={null} onMouseEnter={null}>
+        <div className='nav-menu' slide={getMenuState()} onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>
             <Link to='/home' className='nav-link'>Home</Link>
             <a href={resume} target='_blank' rel="noreferrer" className='nav-link'>Resume</a>
             <Link to='/portfolio' className='nav-link'>Portfolio</Link>

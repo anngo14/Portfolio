@@ -4,7 +4,6 @@ import '../css/Nav.css'
 function Nav(props) {
     let toggle = () => {
         let menuState = props.menuState();
-        console.log("in Nav = " + menuState);
         if(menuState === false || menuState === null){
             return props.data(true);
         } else{

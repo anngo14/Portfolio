@@ -54,6 +54,14 @@ export default function Portfolio() {
             image: "dvr.jpg",
             more: "Java application that serves as a DVR managing system. Services are categorized into various packages (Sports, Movies, Kids, etc...) which users have the option to choose/remove individual programs from.",
             tags: ["Java", "HTML5", "CSS3", "JDBC", "MySQL"]
+        }, 
+        {
+            title: "Listy2.0",
+            category: "Web App", 
+            code: "https://github.com/anngo14/listy2.0",
+            image: "listy2.png",
+            more: "Web application that lets users create multiple lists that are sorted by task priority. Basic To-Do List application that handles multiple lists.",
+            tags: ["React", "Bootstrap", "NodeJS", "MongoDB"]
         }
     ]
     return (

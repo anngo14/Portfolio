@@ -59,6 +59,7 @@ export default function Portfolio() {
             title: "Listy2.0",
             category: "Web App", 
             code: "https://github.com/anngo14/listy2.0",
+            live: "https://listy2.herokuapp.com/",
             image: "listy2.png",
             more: "Web application that lets users create multiple lists that are sorted by task priority. Basic To-Do List application that handles multiple lists.",
             tags: ["React", "Bootstrap", "NodeJS", "MongoDB"]

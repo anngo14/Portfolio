@@ -5,9 +5,9 @@ import '../css/Experience.css'
 export default function Experience() {
     let experiences = [
         {
-            date: "2019 - present",
-            title: "Video Operations Analyst",
-            company: "YouTube TV",
+            date: "2021 - present",
+            title: "Software Developer",
+            company: "General Motors",
             subtitle: "Austin, TX", 
             iconcolor: 'rgb(33, 150, 243)',
             bgcolor: 'rgb(33, 150, 243)',
@@ -15,7 +15,15 @@ export default function Experience() {
             textcolor: 'white',
         },
         {
-            date: "2019 - present",
+            date: "2019 - 2021",
+            title: "Video Operations Analyst",
+            company: "YouTube TV",
+            subtitle: "Austin, TX", 
+            iconcolor: 'rgb(33, 150, 243)',
+            textcolor: 'black',
+        },
+        {
+            date: "2019 - 2021",
             title: "Software Engineer",
             company: "Tata Consultancy Services",
             subtitle: "Austin, TX", 
@@ -38,8 +46,6 @@ export default function Experience() {
             iconcolor: 'rgb(233, 30, 99)',
             textcolor: 'black',
         },
-        
-
     ];
     return (
         <div className='experience-container'>
